@@ -354,17 +354,31 @@
   <div style="position:absolute;bottom:25%;left:25%;width:400px;height:400px;border-radius:9999px;pointer-events:none;background:radial-gradient(circle, rgba(255,0,170,0.07) 0%, transparent 70%);"></div>
 
   <!-- content -->
-  <div style="position:relative;z-index:10;padding:0 1.5rem;max-width:56rem;margin:0 auto;">
+  <div style="position:relative;z-index:10;padding:0 1.5rem;max-width:56rem;margin:0 auto;width:100%;">
     <div style="margin-bottom:2rem;">
-      <h1 class="ptao-logo animate-flicker" style="font-size:clamp(4rem,16vw,12rem);font-weight:700;line-height:1;color:var(--neon-cyan);text-shadow:0 0 20px var(--neon-cyan), 0 0 60px rgba(0,245,255,0.5), 0 0 120px rgba(0,245,255,0.2);letter-spacing:0.35em;">P.T.A.O.</h1>
+      <h1 class="ptao-logo animate-flicker" style="font-size:clamp(4rem,16vw,12rem);font-weight:700;line-height:1;color:var(--neon-cyan);text-shadow:0 0 20px var(--neon-cyan), 0 0 60px rgba(0,245,255,0.5), 0 0 120px rgba(0,245,255,0.2);letter-spacing:0.35em;text-align:center;padding-right:0.35em;">P.T.A.O.</h1>
     </div>
     <p style="font-size:clamp(0.8rem,2vw,1.25rem);font-weight:300;text-transform:uppercase;letter-spacing:0.3em;color:rgba(232,232,240,0.75);margin-bottom:3rem;">Electronic dance music with a beating human heart</p>
     <div style="width:120px;height:2px;margin:0 auto 2.5rem;background:linear-gradient(90deg, transparent, var(--neon-magenta), transparent);box-shadow:0 0 12px var(--neon-magenta);"></div>
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.75rem;">
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.75rem;margin-bottom:3rem;">
       <span class="tag">Live Electronic</span>
       <span class="tag">Dance</span>
-      <span class="tag">Techno</span>
+      <span class="tag">Organic Minimal</span>
       <span class="tag">Experimental</span>
+    </div>
+
+    <!-- ── NOW PLAYING (inside hero) ── -->
+    <div style="margin-top:1rem;">
+      <p style="font-family:'Courier New',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.25em;color:var(--neon-cyan);margin-bottom:0.75rem;opacity:0.7;">Now Playing</p>
+      <div style="border:1px solid rgba(0,245,255,0.2);overflow:hidden;box-shadow:0 0 30px rgba(0,245,255,0.1);">
+        <iframe
+          height="166"
+          scrolling="no"
+          allow="autoplay"
+          style="display:block;width:100%;border:none;"
+          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ptao-official/tracks&color=%2300f5ff&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+        </iframe>
+      </div>
     </div>
   </div>
 
@@ -387,7 +401,7 @@
       Rooted in dance. <span style="color:var(--neon-magenta);">Shaped by the moment.</span>
     </h2>
     <p style="font-size:1.125rem;line-height:1.75;color:rgba(232,232,240,0.7);">
-      Paulo Travassos and Azak Okena are a live electronic duo from Portugal, now based in Besançon, France. Built around guitar, drums and loopstation, their music is rooted in dance — hypnotic, techno-inspired and shaped entirely by the moment. No setlists. No rules. Just the floor.
+      Paulo Travassos and Azak Okena are a live electronic duo from Portugal, now based in Besançon, France. Built around guitar, drums and loopstation, their music is rooted in dance — hypnotic, organic minimal dance music-inspired and shaped entirely by the moment. No setlists. No rules. Just the floor.
     </p>
   </div>
 </section>
@@ -414,7 +428,7 @@
         <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.2em;font-family:'Courier New',monospace;color:var(--neon-magenta);margin-bottom:0.5rem;">Drums</div>
         <h3 style="font-size:1.75rem;font-weight:700;margin-bottom:1rem;color:#e8e8f0;">Azak Okena</h3>
         <div style="width:40px;height:2px;background-color:var(--neon-magenta);box-shadow:0 0 8px var(--neon-magenta);margin-bottom:1rem;"></div>
-        <p style="color:rgba(232,232,240,0.6);line-height:1.7;">The rhythmic engine. Azak's live drumming drives the groove with raw physical energy — relentless, human and locked into a hypnotic techno-inspired pulse.</p>
+        <p style="color:rgba(232,232,240,0.6);line-height:1.7;">The rhythmic engine. Azak's live drumming drives the groove with raw physical energy — relentless, human and locked into a hypnotic organic minimal dance music-inspired pulse.</p>
       </div>
     </div>
   </div>
@@ -495,9 +509,58 @@
         <div class="badge-magenta">Booking</div>
       </div>
     </div>
-    <div style="text-align:center;">
-      <p style="font-size:0.875rem;text-transform:uppercase;letter-spacing:0.2em;color:rgba(232,232,240,0.4);margin-bottom:1.5rem;">Interested in booking P.T.A.O.?</p>
-      <a href="/cdn-cgi/l/email-protection#35575a5a5e5c5b52754541545a1b5840465c56" class="btn-glow">Get in Touch</a>
+    <!-- Booking CTA -->
+    <div style="position:relative;margin-top:1rem;padding:3rem 2.5rem;border:1px solid rgba(0,245,255,0.15);background:linear-gradient(135deg, rgba(0,245,255,0.04) 0%, rgba(255,0,170,0.04) 100%);overflow:hidden;text-align:center;">
+      <!-- corner accents -->
+      <div style="position:absolute;top:0;left:0;width:24px;height:24px;border-top:2px solid var(--neon-cyan);border-left:2px solid var(--neon-cyan);"></div>
+      <div style="position:absolute;top:0;right:0;width:24px;height:24px;border-top:2px solid var(--neon-magenta);border-right:2px solid var(--neon-magenta);"></div>
+      <div style="position:absolute;bottom:0;left:0;width:24px;height:24px;border-bottom:2px solid var(--neon-magenta);border-left:2px solid var(--neon-magenta);"></div>
+      <div style="position:absolute;bottom:0;right:0;width:24px;height:24px;border-bottom:2px solid var(--neon-cyan);border-right:2px solid var(--neon-cyan);"></div>
+      <!-- glow -->
+      <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 100%, rgba(0,245,255,0.06) 0%, transparent 65%);"></div>
+
+      <p style="font-family:'Courier New',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.3em;color:rgba(232,232,240,0.35);margin-bottom:1rem;">Interested in booking P.T.A.O.?</p>
+      <p style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-0.01em;margin-bottom:2.5rem;line-height:1.2;">
+        Let's make something<br><span style="color:var(--neon-cyan);text-shadow:0 0 20px rgba(0,245,255,0.5);">unforgettable.</span>
+      </p>
+
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-bottom:2.5rem;">
+        <!-- Email -->
+        <a href="/cdn-cgi/l/email-protection#cbbbbfaaa4e5a4adada2a8a2aaa78baca6aaa2a7e5a8a4a6"
+           style="display:flex;align-items:center;gap:0.75rem;padding:0.9rem 1.5rem;border:1px solid rgba(0,245,255,0.3);background:rgba(0,245,255,0.05);color:#e8e8f0;text-decoration:none;transition:box-shadow 0.25s,border-color 0.25s;"
+           onmouseover="this.style.borderColor='rgba(0,245,255,0.7)';this.style.boxShadow='0 0 20px rgba(0,245,255,0.2)'"
+           onmouseout="this.style.borderColor='rgba(0,245,255,0.3)';this.style.boxShadow='none'">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--neon-cyan);flex-shrink:0;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <div style="text-align:left;">
+            <div style="font-family:'Courier New',monospace;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--neon-cyan);margin-bottom:0.15rem;">Email</div>
+            <div style="font-size:0.9rem;"><span class="__cf_email__" data-cfemail="0777736668296861616e646e666b47606a666e6b2964686a">[email&#160;protected]</span></div>
+          </div>
+        </a>
+        <!-- Phone -->
+        <a href="tel:+420607063803"
+           style="display:flex;align-items:center;gap:0.75rem;padding:0.9rem 1.5rem;border:1px solid rgba(0,245,255,0.3);background:rgba(0,245,255,0.05);color:#e8e8f0;text-decoration:none;transition:box-shadow 0.25s,border-color 0.25s;"
+           onmouseover="this.style.borderColor='rgba(0,245,255,0.7)';this.style.boxShadow='0 0 20px rgba(0,245,255,0.2)'"
+           onmouseout="this.style.borderColor='rgba(0,245,255,0.3)';this.style.boxShadow='none'">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--neon-cyan);flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.83a16 16 0 0 0 6.29 6.29l1.13-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div style="text-align:left;">
+            <div style="font-family:'Courier New',monospace;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--neon-cyan);margin-bottom:0.15rem;">Phone</div>
+            <div style="font-size:0.9rem;">+420 607 063 803</div>
+          </div>
+        </a>
+        <!-- SoundCloud -->
+        <a href="https://soundcloud.com/ptao-official" target="_blank" rel="noopener noreferrer"
+           style="display:flex;align-items:center;gap:0.75rem;padding:0.9rem 1.5rem;border:1px solid rgba(255,0,170,0.3);background:rgba(255,0,170,0.05);color:#e8e8f0;text-decoration:none;transition:box-shadow 0.25s,border-color 0.25s;"
+           onmouseover="this.style.borderColor='rgba(255,0,170,0.7)';this.style.boxShadow='0 0 20px rgba(255,0,170,0.2)'"
+           onmouseout="this.style.borderColor='rgba(255,0,170,0.3)';this.style.boxShadow='none'">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color:var(--neon-magenta);flex-shrink:0;"><path d="M1.175 12.225c-.056 0-.094.037-.1.093l-.233 2.154.233 2.105c.006.06.044.094.1.094.053 0 .09-.04.097-.094l.263-2.105-.263-2.154c-.007-.056-.044-.093-.097-.093zm.82-.831c-.062 0-.107.044-.113.109l-.208 2.985.208 2.752c.006.066.05.11.113.11.062 0 .107-.044.113-.11l.235-2.752-.235-2.985c-.006-.065-.05-.109-.113-.109zm.859-.28c-.075 0-.13.055-.136.13l-.185 3.265.185 2.905c.006.075.061.13.136.13.074 0 .13-.055.136-.13l.21-2.905-.21-3.265c-.006-.075-.062-.13-.136-.13zm.879-.162c-.087 0-.152.065-.158.152l-.163 3.427.163 3.015c.006.087.071.152.158.152.086 0 .152-.065.158-.152l.184-3.015-.184-3.427c-.006-.087-.072-.152-.158-.152zm.897-.056c-.1 0-.174.074-.18.174l-.14 3.483.14 3.073c.006.1.08.174.18.174.099 0 .174-.074.18-.174l.158-3.073-.158-3.483c-.006-.1-.081-.174-.18-.174zm.916-.006c-.112 0-.196.084-.201.196l-.118 3.489.118 3.12c.005.112.09.196.201.196.112 0 .196-.084.201-.196l.134-3.12-.134-3.489c-.005-.112-.089-.196-.201-.196zm.934.019c-.124 0-.218.094-.223.218l-.096 3.47.096 3.15c.005.124.1.218.223.218.124 0 .218-.094.223-.218l.109-3.15-.109-3.47c-.005-.124-.099-.218-.223-.218zm2.055-.507c-.025-.013-.053-.019-.08-.019-.044 0-.087.015-.12.043-.05.041-.08.102-.083.167l-.077 3.996.077 2.84c.003.065.033.126.083.167.033.028.076.043.12.043.027 0 .055-.006.08-.019.067-.033.11-.102.113-.174l.087-2.857-.087-3.996c-.003-.072-.046-.141-.113-.191zm1.005-.417c-.028-.016-.059-.024-.09-.024-.05 0-.098.018-.135.05-.055.046-.088.114-.09.186l-.064 4.413.064 2.83c.002.072.035.14.09.186.037.032.085.05.135.05.031 0 .062-.008.09-.024.074-.037.121-.115.124-.196l.073-2.846-.073-4.413c-.003-.081-.05-.159-.124-.212zm1.03-.295c-.031-.018-.066-.028-.101-.028-.056 0-.11.02-.152.056-.062.051-.099.127-.1.207l-.051 4.708.051 2.81c.001.08.038.156.1.207.042.036.096.056.152.056.035 0 .07-.01.101-.028.083-.042.136-.129.138-.22l.058-2.825-.058-4.708c-.002-.091-.055-.178-.138-.241zm1.056-.162c-.035-.02-.073-.031-.113-.031-.063 0-.123.022-.17.062-.069.057-.11.141-.111.229l-.038 4.87.038 2.79c.001.088.042.172.111.229.047.04.107.062.17.062.04 0 .078-.011.113-.031.092-.047.151-.143.153-.244l.043-2.806-.043-4.87c-.002-.101-.061-.197-.153-.261zm4.184 1.857c-.267 0-.527.05-.768.146-.158-1.807-1.683-3.214-3.545-3.214-.484 0-.946.1-1.362.278-.159.066-.202.133-.203.192v6.498c.001.062.048.114.11.12h5.768c.513 0 .928-.415.928-.928 0-.513-.415-.928-.928-.928z"/></svg>
+          <div style="text-align:left;">
+            <div style="font-family:'Courier New',monospace;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--neon-magenta);margin-bottom:0.15rem;">Listen</div>
+            <div style="font-size:0.9rem;">soundcloud.com/ptao-official</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="width:60px;height:1px;margin:0 auto;background:linear-gradient(90deg,transparent,rgba(0,245,255,0.4),transparent);"></div>
     </div>
   </div>
 </section>
@@ -529,7 +592,7 @@
         scrolling="no"
         allow="autoplay"
         style="display:block;width:100%;border:none;"
-        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/paulo-travasso-azak-okena&color=%2300f5ff&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+        src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/4uo6UM0W8bZdRmZXMG&color=%2300f5ff&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
       </iframe>
     </div>
     <!-- SoundCloud 2 — JAE Sessions archive -->
@@ -670,7 +733,35 @@
   </div>
 </section>
 
+<!-- ── CONTACT ── -->
+<section style="padding:6rem 1.5rem;background-color:var(--dark-surface);">
+  <div style="max-width:48rem;margin:0 auto;text-align:center;">
+    <div class="section-line">
+      <div class="section-line-bar"></div>
+      <span class="section-line-label">Contact</span>
+      <div class="section-line-bar"></div>
+    </div>
+    <h2 style="font-size:clamp(1.875rem,4vw,2.5rem);font-weight:700;margin-bottom:3rem;">
+      Get in <span style="color:var(--neon-magenta);">Touch</span>
+    </h2>
+    <div style="display:flex;flex-direction:column;gap:1.5rem;align-items:center;">
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <span style="font-family:'Courier New',monospace;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--neon-cyan);">Email</span>
+        <a href="/cdn-cgi/l/email-protection#cbbbbfaaa4e5a4adada2a8a2aaa78baca6aaa2a7e5a8a4a6" style="color:rgba(232,232,240,0.7);text-decoration:none;font-size:1rem;"><span class="__cf_email__" data-cfemail="0777736668296861616e646e666b47606a666e6b2964686a">[email&#160;protected]</span></a>
+      </div>
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <span style="font-family:'Courier New',monospace;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--neon-cyan);">SoundCloud</span>
+        <a href="https://soundcloud.com/ptao-official" target="_blank" rel="noopener noreferrer" style="color:rgba(232,232,240,0.7);text-decoration:none;font-size:1rem;">soundcloud.com/ptao-official</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <span style="font-family:'Courier New',monospace;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--neon-cyan);">Phone</span>
+        <a href="tel:+420607063803" style="color:rgba(232,232,240,0.7);text-decoration:none;font-size:1rem;">+420 607 063 803</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ── FOOTER ── -->
 <footer style="padding:3rem 1.5rem;text-align:center;border-top:1px solid rgba(0,245,255,0.1);background-color:var(--dark-bg);">
   <div class="ptao-logo" style="font-size:1.5rem;font-weight:700;color:var(--neon-cyan);opacity:0.7;margin-bottom:0.75rem;">P.T.A.O.</div>
-  <p style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.2em;color:rgba(232,232,240,0.25);">Paulo Travassos &amp; Azak Okena · Portugal / Besanço
+  <p style="font-size:0.75rem;text-transform:upper
